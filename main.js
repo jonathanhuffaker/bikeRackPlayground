@@ -56,6 +56,8 @@ function calcRoute() {
       
       directionsDisplay.setDirections(response);
       showSteps(response);
+
+      map.data.loadGeoJson('data/bike-rack.geojson');
     }
   });
 }
