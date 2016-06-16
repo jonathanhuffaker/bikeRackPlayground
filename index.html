@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  <h2> Nash Bike Trip</h2>
+
+   <form>
+        <label>Your Address: </label>
+        <input id="start" value="500 Interstate Blvd. Nashville, TN" type="text">
+        <label>Destination: </label>
+        <input id="end" value="617 Whispering Hills Drive, Nashville, TN 37211" type="text">
+        <input type="button" value="Update" onclick="calcRoute();">
+      <br/>
+       <label>Start title: </label>
+       <input  value="School" type="text">
+      <label>end title: </label>
+       <input  value="Home" type="text">
+      <br/>
+       <input type="button" value="Save trip for later"  >
+      <button onclick="setLayer('Bicycling')">Bicycling Layer</button> 
+    </form>
+    <div id="map"></div>
+  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N9rm7_COzKRN-2OEYsJDpJwLTCjQQis&callback=initialize"
+    async defer></script>
+    <script src="./main.js"> </script>
+  </body>
+</html>
+
