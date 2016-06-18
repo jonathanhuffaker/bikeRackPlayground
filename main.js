@@ -70,9 +70,11 @@ function showSteps(directionResult) {
   var myRoute = directionResult.routes[0].legs[0];
 
   for (var i = 0; i < myRoute.steps.length; i++) {
+      // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
       var marker = new google.maps.Marker({
         position: myRoute.steps[i].start_point,
         map: map
+        // icon: iconBase + 'info-i_maps.png'
       });
       attachInstructionText(marker, myRoute.steps[i].instructions);
       markerArray[i] = marker;
