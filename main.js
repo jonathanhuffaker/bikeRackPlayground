@@ -57,6 +57,9 @@ function calcRoute() {
       directionsDisplay.setDirections(response);
       showSteps(response);
 
+// ===Below is calling my bike-rack data===
+
+
       map.data.loadGeoJson('data/bike-rack.geojson');
     }
   });
