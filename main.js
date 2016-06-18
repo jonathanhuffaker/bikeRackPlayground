@@ -60,7 +60,7 @@ function calcRoute() {
 // ===Below is calling my bike-rack data===
 
 
-      map.data.loadGeoJson('data/bike-rack.geojson');
+      map.data.loadGeoJson('BikeData/bike-rack.geojson');
     }
   });
 }
